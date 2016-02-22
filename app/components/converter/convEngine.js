@@ -1,4 +1,4 @@
-app.service("ConversionEngine", function ($scope) {
+app.factory("ConversionEngine", function ($scope) {
     
     /*object diagram ...
     song{lines[line{convTabs: $, origTabs: $, lyrics: $}]}
