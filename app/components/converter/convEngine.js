@@ -1,4 +1,9 @@
 app.service("ConversionEngine", function ($scope) {
+    
+    /*object diagram ...
+    song{lines[line{convTabs: $, origTabs: $, lyrics: $}]}
+    */
+    
     //reference lists to create conversion tables from
     this.sharpList = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'];
     this.flatList = ['A', 'Bb', 'B', 'C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab', 'A', 'Bb', 'B', 'C', 'Db', 'D', 'Eb', 'E', 'F', 'Gb', 'G', 'Ab'];
