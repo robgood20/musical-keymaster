@@ -1,6 +1,10 @@
+<!--This is the page for the editor ... page #2 on our app map-->
 <div>
     
-    <textarea name="song-area" id="" cols="150" rows="25" ng-model="textarea" placeholder="input chord-sheet here ..."></textarea>
+    <textarea name="song-area" id="" cols="150" rows="25" ng-model="musicInput" placeholder="input chord-sheet here ..."></textarea>
     
-    {{textarea}}
+    
+    <button ng-click="peekaboo()">Submit</button>
+
 </div>
+<span>{{musicInput}}</span>

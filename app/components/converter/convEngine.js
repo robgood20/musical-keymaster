@@ -1,6 +1,24 @@
-app.factory("ConversionEngine", function ($scope) {
+app.service("ConversionEngine", function () {
     
-    //TODO: insert switch statement here to convert (B# to C), (E# to F), (Cb to B), (Fb to E) .....................
+    //This converts difficult chords (B# to C), (E# to F), (Cb to B), (Fb to E) to good stuff
+     this.funkOut = function(chord){
+         alert("inservice");
+         switch (chord){
+             case "B#":
+             chord = "C";
+             break;
+             case "E#":
+             chord = "F";
+             break;
+             case "Cb":
+             chord = "B";
+             break;
+             case "Fb":
+             chord = "E";
+         }
+         return chord;
+     }
+     
      
     //reference lists to create conversion tables from
     this.sharpList = ['A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#', 'A', 'A#', 'B', 'C', 'C#', 'D', 'D#', 'E', 'F', 'F#', 'G', 'G#'];
