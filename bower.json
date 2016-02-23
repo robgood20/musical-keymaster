@@ -4,7 +4,7 @@
   "main": "",
   "moduleType": [],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/BertAllen/musical-keymaster",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -20,5 +20,8 @@
   },
   "resolutions": {
     "angular": "^1.0.8"
-  }
+  },
+  "authors": [
+    "BertAllen <mrlaughingdragon@aol.com>"
+  ]
 }
