@@ -2,7 +2,7 @@ app.service("ConversionEngine", function () {
     
     //This converts difficult chords (B# to C), (E# to F), (Cb to B), (Fb to E) to good stuff
      this.funkOut = function(chord){
-         alert("inservice");
+         alert("funkOut inservice");
          switch (chord){
              case "B#":
              chord = "C";
